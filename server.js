@@ -9,7 +9,7 @@ app.use(express.static( '/dist/monty-research'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname + '/dist/monty-research/index.html'));
+res.sendFile(path.join( '/dist/monty-research/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
